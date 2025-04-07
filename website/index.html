@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Decind Project</title>
+		<link rel="icon" href="images/favicon.png" sizes="any" type="image/png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/css/jquery.roadmap.min.css" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="#intro">Decind Project</a></li>
+						<li><a href="#one">About</a></li>
+						<li><a href="#two">Roadmap</a></li>
+						<li><a href="#three">Ressources</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<div id="wrapper">
+			<section id="intro" class="wrapper style1 fullscreen fade-up">
+				<div class="inner" style="text-align: center;">
+					<img src="images/big_logo.png" alt="Decind Logo" style="width: 40%" /></a>
+					<h2>Decentralized Index Funds Project</h2>
+					<p>Cross-chain, crowd-managed and decentralized index funds</p>
+					<br/>
+				</div>
+			</section>
+			<section id="one" class="wrapper style2 fullscreen fade-up">
+				<div class="inner">
+					<h2>What is Decind Project?</h2>
+					<p>
+						The idea behind the Decentralized Index Funds Project is to use decentralized finance
+						exchanges with smart contracts to <b>replicate indexes on most valued cryptocurrencies</b>.
+					</p>
+					<p>
+						Also, <b>every people in the world have different reasons to save money</b>: buy a house, prepare
+						the futures of their children, have enough money to retire peacefully, or just make it grows.
+						For each project, their is a <b>different goal time</b> and a <b>different risk</b> to be taken, that should be <b>leveraged
+						by index funds based on their risks and profits</b>. Each project should represented by a different <b>portfolio</b>.
+					</p>
+					<ul>
+						<li>This project needs to be <b>trustless</b> and <b>decentralized</b></li>
+						<li>This project needs to be as much <b>personalized</b> as possible</li>
+						<li>This project needs to have the <b>lowest fees</b></li>
+					</ul>
+					<p>The final goal is to <b>give access to an investment product in the crypto world that is cheap and
+						simple, for everybody</b>. For this goal to become a reality, not only this needs well-designed
+						products, but also a need for simple investment tools for non-tech people.</p>
+				</div>
+			</section>
+			<section id="two" class="wrapper style3 fullscreen fade-up">
+				<div class="inner">
+					<h2>Roadmap</h2>
+					<div class="features">
+						<section style="width: 100%; padding:50px; background-color: #04215C">
+							<div id="decind-roadmap"></div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<section id="three" class="wrapper style2 fullscreen fade-up">
+				<div class="inner">
+					<h2>Ressources</h2>
+					<div class="features">
+						<section>
+							<span class="icon solid major fa-file-alt"></span>
+							<h3>Whitepaper</h3>
+							<p>Technical parts of the project are described and explained in a whitepaper.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/decind/whitepaper/blob/official/whitepaper.pdf" target="_blank" class="button disabled">Coming Soon</a></li>
+							</ul>
+						</section>
+						<section>
+							<span class="icon solid major fa-code"></span>
+							<h3>Source Code</h3>
+							<p>Every line of code developped for the project is hosted on Github.</p>
+							<ul class="actions">
+								<li><a href="https://github.com/decind" target="_blank" class="button">Access it</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer id="footer" class="wrapper style1-alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Decind Project. All rights reserved.</li>
+					<li>Design kindly provided by <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.roadmap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				var events = [
+					{
+						date: '<span style="color: white">Simulation</span>',
+						content: '<small>Decind fund model validation</small>'
+					},
+					{
+						date: '<span style="color: white">Simple Fund</span>',
+						content: '<small>Deploy first Fund vote with<br/>token for self-update</small>'
+					},
+					{
+						date: '<span style="color: white">Client</span>',
+						content: '<small>Update the Decind application<br/>for users investment</small>'
+					},
+					{
+						date: '<span style="color: white">Meta-funds and sub-funds</span>',
+						content: '<small>Deploy sub-funds that can<br/>self-update from meta-fund vote</small>'
+					},
+					{
+						date: '<span style="color: white">Portfolios</span>',
+						content: '<small>Deploy the portfolio contract</small>'
+					}
+				];
+	
+				$('#decind-roadmap').roadmap(events, {
+					eventsPerSlide: 5,
+					slide: 1,
+					prevArrow: '<i class="bi bi-arrow-left-circle"></i>',
+					nextArrow: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg>',
+					onBuild: function () { }
+				});
+			});
+		</script>
+	</body>
+</html>
